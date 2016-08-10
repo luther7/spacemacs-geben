@@ -12,4 +12,7 @@
 (defconst geben-packages '(geben))
 
 (defun geben/init-geben ()
-  (use-package geben))
+  (use-package geben
+    :config (spacemacs/declare-prefix "Z" "geben")
+    :config (spacemacs/set-leader-keys
+              "Za" 'geben)))
