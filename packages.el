@@ -9,7 +9,7 @@
 ;;
 ;;; License: GPLv3
 
-(defconst geben-packages
-  '(
-    geben
-    )
+(defconst geben-packages '(geben))
+
+(defun geben/init-geben ()
+  (use-package geben))
