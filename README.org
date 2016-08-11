@@ -1,0 +1,73 @@
+#+TITLE: Geben layer                                                                                         
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../../css/readtheorg.css" />
+
+* Table of Contents                                         :TOC_4_org:noexport:
+ - [[TODO][TODO]]
+ - [[What is this?][What is this?]]
+ - [[Install][Install]]
+ - [[Keybindings][Keybindings]]
+
+* TODO
+ - Command descriptions
+
+* What is this?
+Spacemacs bindings for geben.  Full documentation and examples can be found in the
+package's [[https://github.com/pokehanai/geben-on-emacs][GitHub Page]].
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =geben= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Keybindings
+
+| Key Binding   | Description                                                 |
+|---------------+-------------------------------------------------------------|
+| ~SPC K a~     | geben                                                       |
+| ~SPC K r~     | geben-run                                                   |
+| ~SPC K x~     | geben-stop                                                  |
+| ~SPC K e~     | geben-end                                                   |
+| ~SPC K p~     | geben-proxy                                                 |
+| ~SPC K n~     | geben-proxy-end                                             |
+| ~SPC K w~     | geben-where                                                 |
+| ~SPC K q~     | geben-quit-window                                           |
+| ~SPC K v~     | geben-set-redirect                                          |
+| ~SPC K h~     | geben-mode-help                                             |
+| ~SPC K m~     | geben-toggle-pause-at-entry-line-flag                       |
+| ~SPC K j~     | geben-eval-expression                                       |
+| ~SPC K k~     | geben-eval-current-word                                     |
+| ~SPC K i~     | geben-run-to-cursor                                         |
+| ~SPC K g~     | geben-full-frame-mode                                       |
+| ~SPC K o~     | geben-open-file                                             |
+| ~SPC K f~     | geben-find-file                                             |
+| ~SPC K c d~   | geben-display-context                                       |
+| ~SPC K c m~   | geben-context-mode                                          |
+| ~SPC K c h~   | geben-context-mode-help                                     |
+| ~SPC K c r~   | geben-context-mode-refresh                                  |
+| ~SPC K t t~   | geben-show-backtrace                                        |
+| ~SPC K t m~   | geben-backtrace-mode                                        |
+| ~SPC K t h~   | geben-backtrace-mode-help                                   |
+| ~SPC K t g~   | geben-backtrace-mode-goto                                   |
+| ~SPC K t h~   | geben-backtrace-mode-mouse-goto                             |
+| ~SPC K t c~   | geben-backtrace-mode-mode-context                           |
+| ~SPC K s i~   | geben-step-into                                             |
+| ~SPC K s o~   | geben-step-over                                             |
+| ~SPC K s u~   | geben-step-out                                              |
+| ~SPC K s a~   | geben-step-again                                            |
+| ~SPC K b m~   | geben-breakpoint-menu                                       |
+| ~SPC K b i~   | geben-show-breakpoint-list                                  |
+| ~SPC K b c~   | geben-clear-breakpoints                                     |
+| ~SPC K b u~   | geben-unset-breakpoint-line                                 |
+| ~SPC K b l e~ | geben-breakpoint-list-execute                               |
+| ~SPC K b l r~ | geben-breakpoint-list-refresh                               |
+| ~SPC K b l u~ | geben-breakpoint-list-unmark                                |
+| ~SPC K b l h~ | geben-breakpoint-list-mode-help                             |
+| ~SPC K b l g~ | geben-breakpoint-list-mode-goto                             | 
+| ~SPC K b l d~ | geben-breakpoint-list-mark-delete                           |
+| ~SPC K b s i~ | geben-set-breakpoint-conditional                            |
+| ~SPC K b s r~ | geben-set-breakpoint-return                                 |
+| ~SPC K b s l~ | geben-set-breakpoint-line                                   |
+| ~SPC K b s e~ | geben-set-breakpoint-exception                              |
+| ~SPC K b s w~ | geben-set-breakpoint-watch                                  |
+| ~SPC K b s c~ | geben-set-breakpoint-call                                   |
+|---------------+-------------------------------------------------------------|
