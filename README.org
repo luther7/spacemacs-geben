@@ -2,13 +2,9 @@
 #+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../../css/readtheorg.css" />
 
 * Table of Contents                                         :TOC_4_org:noexport:
- - [[TODO][TODO]]
  - [[What is this?][What is this?]]
  - [[Install][Install]]
  - [[Keybindings][Keybindings]]
-
-* TODO
- - Command descriptions
 
 * What is this?
 Spacemacs bindings for geben.  Full documentation and examples can be found in the
