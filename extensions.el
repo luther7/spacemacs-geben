@@ -9,6 +9,6 @@
 ;;
 ;;; License: GPLv3
 
-(setq spotify-pre-extensions '())
+(setq geben-pre-extensions '())
 
-(setq spotify-post-extensions '())
+(setq geben-post-extensions '())
