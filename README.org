@@ -8,9 +8,12 @@
 
 * What is this?
 Spacemacs bindings for geben.  Full documentation and examples can be found in the
-package's [[https://github.com/pokehanai/geben-on-emacs][GitHub Page]].
+package's [[https://github.com/pokehanai/geben-on-emacs][GitHub Page]]. \\
+This layer still requires testing before making a merge request.
 
 * Install
+Clone the repo into ~/.emacs.d/private: \\
+~git clone https://github.com/rubberydub/spacemacs-geben.git ~/.emacs.d/private/geben~ \\
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =geben= to the existing =dotspacemacs-configuration-layers= list in this
 file.
