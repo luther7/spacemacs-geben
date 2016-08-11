@@ -1,4 +1,4 @@
-;;; packages.el --- geben layer packages file for Spacemacs.
+;;; config.el --- geben layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2016 Sylvain Benner & Contributors
 ;;
@@ -9,7 +9,5 @@
 ;;
 ;;; License: GPLv3
 
-(defconst geben-packages '(geben))
-
-(defun geben/init-geben ()
-  (use-package geben))
+(spacemacs/declare-prefix "Z" "geben")
+(spacemacs/set-leader-keys "Za" 'geben)
