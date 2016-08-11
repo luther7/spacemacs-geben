@@ -17,56 +17,56 @@
     :init
     (progn
       (spacemacs/set-leader-keys
-        "Ka" 'geben
-        "Kr" 'geben-run
-        "Kx" 'geben-stop
-        "Ke" 'geben-end
-        "Kp" 'geben-proxy
-        "Kn" 'geben-proxy-end
-        "Kw" 'geben-where
-        "Kq" 'geben-quit-window
-        "Kv" 'geben-set-redirect
-        "Kh" 'geben-mode-help
-        "Km" 'geben-toggle-pause-at-entry-line-flag
-        "Kj" 'geben-eval-expression
-        "Kk" 'geben-eval-current-word
-        "Ki" 'geben-run-to-cursor
-        "Kg" 'geben-full-frame-mode
-        "Ko" 'geben-open-file
-        "Kf" 'geben-find-file
+        "Ga" 'geben
+        "Gr" 'geben-run
+        "Gx" 'geben-stop
+        "Ge" 'geben-end
+        "Gp" 'geben-proxy
+        "Gn" 'geben-proxy-end
+        "Gw" 'geben-where
+        "Gq" 'geben-quit-window
+        "Gv" 'geben-set-redirect
+        "Gh" 'geben-mode-help
+        "Gm" 'geben-toggle-pause-at-entry-line-flag
+        "Gj" 'geben-eval-expression
+        "Gk" 'geben-eval-current-word
+        "Gi" 'geben-run-to-cursor
+        "Gg" 'geben-full-frame-mode
+        "Go" 'geben-open-file
+        "Gf" 'geben-find-file
 
-        "Kcd" 'geben-display-context
-        "Kcm" 'geben-context-mode
-        "Kch" 'geben-context-mode-help
-        "Kcr" 'geben-context-mode-refresh
+        "Gcd" 'geben-display-context
+        "Gcm" 'geben-context-mode
+        "Gch" 'geben-context-mode-help
+        "Gcr" 'geben-context-mode-refresh
 
-        "Ktt" 'geben-show-backtrace
-        "Ktm" 'geben-backtrace-mode
-        "Kth" 'geben-backtrace-mode-help
-        "Ktg" 'geben-backtrace-mode-goto
-        "Kth" 'geben-backtrace-mode-mouse-goto
-        "Ktc" 'geben-backtrace-mode-mode-context
+        "Gtt" 'geben-show-backtrace
+        "Gtm" 'geben-backtrace-mode
+        "Gth" 'geben-backtrace-mode-help
+        "Gtg" 'geben-backtrace-mode-goto
+        "Gth" 'geben-backtrace-mode-mouse-goto
+        "Gtc" 'geben-backtrace-mode-mode-context
 
-        "Ksi" 'geben-step-into
-        "Kso" 'geben-step-over
-        "Ksu" 'geben-step-out
-        "Ksa" 'geben-step-again
+        "Gsi" 'geben-step-into
+        "Gso" 'geben-step-over
+        "Gsu" 'geben-step-out
+        "Gsa" 'geben-step-again
 
-        "Kbm" 'geben-breakpoint-menu
-        "Kbi" 'geben-show-breakpoint-list
-        "Kbc" 'geben-clear-breakpoints
-        "Kbu" 'geben-unset-breakpoint-line
+        "Gbm" 'geben-breakpoint-menu
+        "Gbi" 'geben-show-breakpoint-list
+        "Gbc" 'geben-clear-breakpoints
+        "Gbu" 'geben-unset-breakpoint-line
 
-        "Kble" 'geben-breakpoint-list-execute
-        "Kblr" 'geben-breakpoint-list-refresh
-        "Kblu" 'geben-breakpoint-list-unmark
-        "Kblh" 'geben-breakpoint-list-mode-help
-        "Kblg" 'geben-breakpoint-list-mode-goto
-        "Kbld" 'geben-breakpoint-list-mark-delete
+        "Gble" 'geben-breakpoint-list-execute
+        "Gblr" 'geben-breakpoint-list-refresh
+        "Gblu" 'geben-breakpoint-list-unmark
+        "Gblh" 'geben-breakpoint-list-mode-help
+        "Gblg" 'geben-breakpoint-list-mode-goto
+        "Gbld" 'geben-breakpoint-list-mark-delete
 
-        "Kbsi" 'geben-set-breakpoint-conditional
-        "Kbsr" 'geben-set-breakpoint-return
-        "Kbsl" 'geben-set-breakpoint-line
-        "Kbse" 'geben-set-breakpoint-exception
-        "Kbsw" 'geben-set-breakpoint-watch
-        "Kbsc" 'geben-set-breakpoint-call))))
+        "Gbsi" 'geben-set-breakpoint-conditional
+        "Gbsr" 'geben-set-breakpoint-return
+        "Gbsl" 'geben-set-breakpoint-line
+        "Gbse" 'geben-set-breakpoint-exception
+        "Gbsw" 'geben-set-breakpoint-watch
+        "Gbsc" 'geben-set-breakpoint-call))))

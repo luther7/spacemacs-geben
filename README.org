@@ -22,51 +22,51 @@ file.
 
 | Key Binding   | Description                                                 |
 |---------------+-------------------------------------------------------------|
-| ~SPC K a~     | geben                                                       |
-| ~SPC K r~     | geben-run                                                   |
-| ~SPC K x~     | geben-stop                                                  |
-| ~SPC K e~     | geben-end                                                   |
-| ~SPC K p~     | geben-proxy                                                 |
-| ~SPC K n~     | geben-proxy-end                                             |
-| ~SPC K w~     | geben-where                                                 |
-| ~SPC K q~     | geben-quit-window                                           |
-| ~SPC K v~     | geben-set-redirect                                          |
-| ~SPC K h~     | geben-mode-help                                             |
-| ~SPC K m~     | geben-toggle-pause-at-entry-line-flag                       |
-| ~SPC K j~     | geben-eval-expression                                       |
-| ~SPC K k~     | geben-eval-current-word                                     |
-| ~SPC K i~     | geben-run-to-cursor                                         |
-| ~SPC K g~     | geben-full-frame-mode                                       |
-| ~SPC K o~     | geben-open-file                                             |
-| ~SPC K f~     | geben-find-file                                             |
-| ~SPC K c d~   | geben-display-context                                       |
-| ~SPC K c m~   | geben-context-mode                                          |
-| ~SPC K c h~   | geben-context-mode-help                                     |
-| ~SPC K c r~   | geben-context-mode-refresh                                  |
-| ~SPC K t t~   | geben-show-backtrace                                        |
-| ~SPC K t m~   | geben-backtrace-mode                                        |
-| ~SPC K t h~   | geben-backtrace-mode-help                                   |
-| ~SPC K t g~   | geben-backtrace-mode-goto                                   |
-| ~SPC K t h~   | geben-backtrace-mode-mouse-goto                             |
-| ~SPC K t c~   | geben-backtrace-mode-mode-context                           |
-| ~SPC K s i~   | geben-step-into                                             |
-| ~SPC K s o~   | geben-step-over                                             |
-| ~SPC K s u~   | geben-step-out                                              |
-| ~SPC K s a~   | geben-step-again                                            |
-| ~SPC K b m~   | geben-breakpoint-menu                                       |
-| ~SPC K b i~   | geben-show-breakpoint-list                                  |
-| ~SPC K b c~   | geben-clear-breakpoints                                     |
-| ~SPC K b u~   | geben-unset-breakpoint-line                                 |
-| ~SPC K b l e~ | geben-breakpoint-list-execute                               |
-| ~SPC K b l r~ | geben-breakpoint-list-refresh                               |
-| ~SPC K b l u~ | geben-breakpoint-list-unmark                                |
-| ~SPC K b l h~ | geben-breakpoint-list-mode-help                             |
-| ~SPC K b l g~ | geben-breakpoint-list-mode-goto                             | 
-| ~SPC K b l d~ | geben-breakpoint-list-mark-delete                           |
-| ~SPC K b s i~ | geben-set-breakpoint-conditional                            |
-| ~SPC K b s r~ | geben-set-breakpoint-return                                 |
-| ~SPC K b s l~ | geben-set-breakpoint-line                                   |
-| ~SPC K b s e~ | geben-set-breakpoint-exception                              |
-| ~SPC K b s w~ | geben-set-breakpoint-watch                                  |
-| ~SPC K b s c~ | geben-set-breakpoint-call                                   |
+| ~SPC G a~     | geben                                                       |
+| ~SPC G r~     | geben-run                                                   |
+| ~SPC G x~     | geben-stop                                                  |
+| ~SPC G e~     | geben-end                                                   |
+| ~SPC G p~     | geben-proxy                                                 |
+| ~SPC G n~     | geben-proxy-end                                             |
+| ~SPC G w~     | geben-where                                                 |
+| ~SPC G q~     | geben-quit-window                                           |
+| ~SPC G v~     | geben-set-redirect                                          |
+| ~SPC G h~     | geben-mode-help                                             |
+| ~SPC G m~     | geben-toggle-pause-at-entry-line-flag                       |
+| ~SPC G j~     | geben-eval-expression                                       |
+| ~SPC G k~     | geben-eval-current-word                                     |
+| ~SPC G i~     | geben-run-to-cursor                                         |
+| ~SPC G g~     | geben-full-frame-mode                                       |
+| ~SPC G o~     | geben-open-file                                             |
+| ~SPC G f~     | geben-find-file                                             |
+| ~SPC G c d~   | geben-display-context                                       |
+| ~SPC G c m~   | geben-context-mode                                          |
+| ~SPC G c h~   | geben-context-mode-help                                     |
+| ~SPC G c r~   | geben-context-mode-refresh                                  |
+| ~SPC G t t~   | geben-show-backtrace                                        |
+| ~SPC G t m~   | geben-backtrace-mode                                        |
+| ~SPC G t h~   | geben-backtrace-mode-help                                   |
+| ~SPC G t g~   | geben-backtrace-mode-goto                                   |
+| ~SPC G t h~   | geben-backtrace-mode-mouse-goto                             |
+| ~SPC G t c~   | geben-backtrace-mode-mode-context                           |
+| ~SPC G s i~   | geben-step-into                                             |
+| ~SPC G s o~   | geben-step-over                                             |
+| ~SPC G s u~   | geben-step-out                                              |
+| ~SPC G s a~   | geben-step-again                                            |
+| ~SPC G b m~   | geben-breakpoint-menu                                       |
+| ~SPC G b i~   | geben-show-breakpoint-list                                  |
+| ~SPC G b c~   | geben-clear-breakpoints                                     |
+| ~SPC G b u~   | geben-unset-breakpoint-line                                 |
+| ~SPC G b l e~ | geben-breakpoint-list-execute                               |
+| ~SPC G b l r~ | geben-breakpoint-list-refresh                               |
+| ~SPC G b l u~ | geben-breakpoint-list-unmark                                |
+| ~SPC G b l h~ | geben-breakpoint-list-mode-help                             |
+| ~SPC G b l g~ | geben-breakpoint-list-mode-goto                             | 
+| ~SPC G b l d~ | geben-breakpoint-list-mark-delete                           |
+| ~SPC G b s i~ | geben-set-breakpoint-conditional                            |
+| ~SPC G b s r~ | geben-set-breakpoint-return                                 |
+| ~SPC G b s l~ | geben-set-breakpoint-line                                   |
+| ~SPC G b s e~ | geben-set-breakpoint-exception                              |
+| ~SPC G b s w~ | geben-set-breakpoint-watch                                  |
+| ~SPC G b s c~ | geben-set-breakpoint-call                                   |
 |---------------+-------------------------------------------------------------|
