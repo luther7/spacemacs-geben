@@ -9,5 +9,10 @@
 ;;
 ;;; License: GPLv3
 
-(spacemacs/declare-prefix "Z" "geben")
-(spacemacs/set-leader-keys "Za" 'geben)
+(spacemacs/declare-prefix "K" "geben")
+(spacemacs/declare-prefix "Ks" "geben-steps")
+(spacemacs/declare-prefix "Kc" "geben-context")
+(spacemacs/declare-prefix "Kt" "geben-backtrace")
+(spacemacs/declare-prefix "Kb" "geben-breakpoint")
+(spacemacs/declare-prefix "Kbl" "geben-breakpoint-list")
+(spacemacs/declare-prefix "Kbs" "geben-breakpoint-set")
