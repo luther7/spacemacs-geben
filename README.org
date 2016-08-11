@@ -13,7 +13,7 @@ This layer still requires testing before making a merge request.
 
 * Install
 Clone the repo: \\
-~git clone https://github.com/rubberydub/spacemacs-geben.git ~/.emacs.d/private/geben~ \\
+~git clone https://github.com/rubberydub/spacemacs-geben.git =~=/.emacs.d/private/geben~ \\
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =geben= to the existing =dotspacemacs-configuration-layers= list in this
 file.
