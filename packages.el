@@ -9,16 +9,23 @@
 ;;
 ;;; License: GPLv3
 
-(defconst geben-packages '(geben
-                           popwin))
+(defvar geben-packages
+  '(
+    geben
+    popwin
+    ))
 
 (defun geben/init-geben ()
   (use-package geben
     :defer t
     :init
     (progn
+      (setq geben-display-window-function (quote popwin:display-buffer))
+      (setq geben-temporary-file-directory (concat spacemacs-cache-directory "geben/"))
+
       (spacemacs/set-leader-keys
         "Gg" 'geben
+        "Gp" 'geben-toggle-pause-at-entry-line-flag
         "Gr" 'geben-run
         "GR" 'geben-run-to-cursor
         "Gs" 'geben-stop
@@ -41,15 +48,16 @@
       (spacemacs|define-transient-state geben
         :title "Geben Transient State"
         :doc "
- Steps            Breakpoints        Show                  Actions
- ──────────────── ────────────────── ───────────────────── ───────────
- [_j_] step again [_d_] call         [_t_] backtrace       [_r_] run
- [_k_] step over  [_D_] return       [_c_] context         [_s_] stop
- [_h_] step into  [_e_] exception
+ Steps            Breakpoints      Show             Actions
+ ──────────────── ──────────────── ──────────────── ─────────────────────
+ [_j_] step again [_d_] call       [_t_] backtrace  [_r_] run
+ [_k_] step over  [_D_] return     [_c_] context    [_s_] stop
+ [_h_] step into  [_e_] exception                   [_p_] pause at entry
  [_l_] step out   [_x_] clear"
         :bindings
         ("r" geben-run)
         ("s" geben-stop :exit t)
+        ("p" geben-toggle-pause-at-entry-line-flag)
         ("j" geben-step-again)
         ("k" geben-step-over)
         ("h" geben-step-into)
@@ -60,15 +68,11 @@
         ("D" geben-set-breakpoint-return)
         ("e" geben-set-breakpoint-exception)
         ("x" geben-clear-breakpoints))
-      (spacemacs/set-leader-keys "Gj" 'spacemacs/geben-transient-state/body)
-      )))
+      (spacemacs/set-leader-keys "G." 'spacemacs/geben-transient-state/body))))
 
 (defun geben/pre-init-popwin ()
   (spacemacs|use-package-add-hook popwin
     :post-config
     (push
-      '(".*backtrace\*" :regexp t :position bottom :noselect t)
-      popwin:special-display-config)
-    (push
-      '(".*context\* fede" :regexp t :position right :stick t :noselect t)
+      '(".*backtrace\*" :regexp t :position bottom)
       popwin:special-display-config)))

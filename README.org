@@ -24,10 +24,11 @@ file.
 | Key Binding | Description                                                   |
 |---------------+-------------------------------------------------------------|
 | ~SPC G g~   | start                                                         |
-| ~SPC G j~   | enter transient state                                         |
+| ~SPC G .~   | enter transient state                                         |
 | ~SPC G r~   | run                                                           |
 | ~SPC G R~   | run to cursor                                                 |
 | ~SPC G s~   | stop                                                          |
+| ~SPC G p~   | pause at entry                                                |
 | ~SPC G q~   | end                                                           |
 | ~SPC G f~   | find file                                                     |
 | ~SPC G F~   | open file                                                     |
