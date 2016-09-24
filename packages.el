@@ -1,4 +1,4 @@
-;;; packages.el --- geben layer packages file for Spacemacs.
+;;; packages.el --- geben layer packages file.
 ;;
 ;; Copyright (c) 2012-2016 Sylvain Benner & Contributors
 ;;
@@ -8,6 +8,8 @@
 ;; This file is not part of GNU Emacs.
 ;;
 ;;; License: GPLv3
+
+
 
 (defvar geben-packages
   '(
@@ -47,17 +49,18 @@
 
       (spacemacs|define-transient-state geben
         :title "Geben Transient State"
-        :doc "
- Steps            Breakpoints      Show             Actions
- ──────────────── ──────────────── ──────────────── ─────────────────────
- [_j_] step again [_d_] call       [_t_] backtrace  [_r_] run
- [_k_] step over  [_D_] return     [_c_] context    [_s_] stop
- [_h_] step into  [_e_] exception                   [_p_] pause at entry
- [_l_] step out   [_x_] clear"
+        :doc "\n
+ Breakpoints^^     Steps^^      Actions^^             Show^^
+ ───────────^^──── ─────^^───── ───────^^──────────── ────^^──────────
+ [_d_] call        [_j_] again  [_r_] run             [_t_] backtrace
+ [_D_] return      [_k_] over   [_s_] stop            [_c_] context
+ [_e_] exception   [_h_] into   [_p_] pause at entry
+ [_x_] clear       [_l_] out    [_q_] end\n"
         :bindings
         ("r" geben-run)
         ("s" geben-stop :exit t)
         ("p" geben-toggle-pause-at-entry-line-flag)
+        ("q" geben-end :exit t)
         ("j" geben-step-again)
         ("k" geben-step-over)
         ("h" geben-step-into)
@@ -67,7 +70,11 @@
         ("d" geben-set-breakpoint-call)
         ("D" geben-set-breakpoint-return)
         ("e" geben-set-breakpoint-exception)
-        ("x" geben-clear-breakpoints))
+        ("C" geben-set-breakpoint-condition)
+        ("x" geben-clear-breakpoints)
+        :on-enter
+        (geben 1)
+        )
       (spacemacs/set-leader-keys "G." 'spacemacs/geben-transient-state/body))))
 
 (defun geben/pre-init-popwin ()
